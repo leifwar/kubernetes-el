@@ -23,6 +23,7 @@
     (deployments . (context deployments))
     (statefulsets . (context statefulsets))
     (ingress . (context ingress))
+    (deploymentconfigs . (context deploymentconfigs))
     (jobs . (context jobs))
     (pods . (context pods))
     (secrets . (context secrets))
@@ -47,6 +48,7 @@ types that should be displayed."
                                  (const deployments)
                                  (const statefulsets)
                                  (const ingress)
+                                 (const deploymentconfigs)
                                  (const overview)
                                  (const pods)
                                  (const secrets)
@@ -183,6 +185,8 @@ form \"--flag=value\" or \"-flag\"."
 (defconst kubernetes-display-statefulset-buffer-name "*kubernetes statefulset*")
 
 (defconst kubernetes-display-ingress-buffer-name "*kubernetes ingress*")
+
+(defconst kubernetes-display-deploymentconfig-buffer-name "*kubernetes deploymentconfig*")
 
 (defconst kubernetes-display-job-buffer-name "*kubernetes job*")
 
